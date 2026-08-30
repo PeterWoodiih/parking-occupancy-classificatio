@@ -4,9 +4,9 @@ Academic project developed for **PSI3471 – Fundamentos de Sistemas Eletrônico
 
 ## Overview
 
-This project develops a Deep Learning model to classify parking spaces as **available** or **occupied** from images.
+Development of a **Deep Learning model to classify parking spaces as available or occupied from images**.
 
-The workflow combines image preprocessing, dataset construction, Convolutional Neural Networks and model evaluation.
+The project combines computer vision techniques, dataset preparation, convolutional neural networks and model evaluation.
 
 ## Approach
 
@@ -14,7 +14,7 @@ The pipeline includes:
 
 1. Reading parking-space annotations from XML files
 2. Extracting individual parking spaces from images
-3. Applying perspective transformation to standardize the parking-space regions
+3. Applying perspective transformation to standardize parking-space regions
 4. Preparing and normalizing the dataset
 5. Training a Convolutional Neural Network
 6. Evaluating the model on validation and test data
@@ -28,11 +28,16 @@ The pipeline includes:
 - scikit-learn
 - Matplotlib
 
-## Repository
+## Model Evaluation
 
-- `parking_occupancy_classification.ipynb` — cleaned and organized project notebook
-- `requirements.txt` — Python dependencies
-- `.gitignore` — files and directories excluded from version control
+The model was evaluated using classification metrics on validation and test datasets, including:
+
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- AUC
+- Confusion matrix
 
 ## Dataset
 
@@ -44,11 +49,3 @@ To run the notebook, place the training and test data under:
 data/
 ├── train/
 └── test/
-```
-
-and adjust the paths in the notebook if necessary.
-
-## Academic Context
-
-**Course:** PSI3471 – Fundamentos de Sistemas Eletrônicos Inteligentes  
-**Institution:** Escola Politécnica da Universidade de São Paulo (USP)
